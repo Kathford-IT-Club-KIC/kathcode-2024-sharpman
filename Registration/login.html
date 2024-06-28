@@ -22,25 +22,10 @@
 				<label>Password:</label><br>
 				<input type="password" id="password" name="password" placeholder="Enter your Password" required>
 			</form>
-			<a href="#" class="login-btn"  id="authButton" >Login</button>
+			<button href="#" class="login-btn"  id="login" >Login</button>
 			<a href="registration.html">Click here to create account</a>
 		</div>
-		<script>
-			document.addEventListener('DOMContentLoaded',function()
-  {
-    const logout = document.getElementById("logout")
-    const loggedIn = localStorage.getItem("loggedIn");
-        if (loggedIn === "true") {
-          logout.textContent = "Log Out";
-          logout.href = "../Registration/login.html";
-        
-        } else {
-          logout.textContent = "Log In";
-          logout.href = "../Registration/login.html";
-        
-        }
-  });
-		</script>
+	
 
 </body>
 </html>
