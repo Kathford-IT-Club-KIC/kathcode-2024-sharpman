@@ -1,0 +1,17 @@
+.slides {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease;
+}
+.slide {
+    width: 33.333%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #333;
+    background: none;
+}
