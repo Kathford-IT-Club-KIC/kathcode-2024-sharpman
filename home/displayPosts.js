@@ -40,8 +40,14 @@ async function fetchAndDisplayPosts() {
       const postElement = document.createElement("div");
       postElement.classList.add("post");
       postElement.innerHTML = `
-        <h2>${postData.title}</h2>
+        <h3>${postData.title}</h3>
         <p>${postData.details}</p>
+        <button class = "like-btn">Like</button>
+        <button class="comment-toggle">Comments</button>
+        <button class = "donate-btn">Donate</button>
+        <div class="comment-section">
+          
+        </div> <!-- Container for comments -->
       `;
       postsContainer.appendChild(postElement);
     });
