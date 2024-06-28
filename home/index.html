@@ -12,7 +12,7 @@
         <a href="index.html">Home</a>
         <a href="../forestFDataFolder/forestFireData.html">Forest Fire Data</a>
         <a href="">Most Impacted District</a>
-        <a href="#" id="authButton">Login</a>
+        <a href="../Registration/login.html" id="logout">Login</a>
         <a href="">Register</a>
     </header>
     <main>
@@ -91,4 +91,18 @@
         slides.style.transform = `translateX(-${index * 33.333}%)`;
     }, 3000);
   }
+  document.addEventListener('DOMContentLoaded',function()
+  {
+    const logout = document.getElementById("logout")
+    const loggedIn = localStorage.getItem("loggedIn");
+        if (loggedIn === "true") {
+          logout.textContent = "Log Out";
+          logout.href = "../Registration/login.html";
+        
+        } else {
+          logout.textContent = "Log In";
+          logout.href = "../Registration/login.html";
+        
+        }
+  });
 </script>
