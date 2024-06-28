@@ -53,12 +53,12 @@ onAuthStateChanged(auth, (user) => {
       
       console.log("Post added with ID:", docRef.id);
       alert("Post added successfully!");
+      location.reload();
     } catch (error) {
       console.error("Error adding post:", error);
       alert("Failed to add post. Please try again later.");
     }
   } else {
-
     alert("You are not authorized to create posts.");
     console.log("Unauthorized user attempted to create a post.");
   }
@@ -66,7 +66,7 @@ onAuthStateChanged(auth, (user) => {
 
   } else {
     // User is not signed in
-    console.log("User is not signed in.");
+    alert("User is not signed in.");
   }
 });
 

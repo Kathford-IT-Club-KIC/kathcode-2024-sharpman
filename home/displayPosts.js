@@ -29,8 +29,7 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth();
 const db = getFirestore();
 
-const postsContainer = document.getElementById("postsContainer");
-
+const postsContainer = document.getElementById("postsContainer"); 
 async function fetchAndDisplayPosts() {
   try {
     const querySnapshot = await getDocs(collection(db, "posts"));
@@ -51,3 +50,4 @@ async function fetchAndDisplayPosts() {
   }
 }
 fetchAndDisplayPosts();
+
