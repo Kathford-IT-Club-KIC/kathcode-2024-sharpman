@@ -1,4 +1,131 @@
-*{
-    margin:0;
-    padding:0;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 98vh;
+    width: 96vw;
+}
+
+.interpretation {}
+
+img {
+    margin-top: 5%;
+    width: 50vw;
+}
+
+.box1 {
+    background-color: #ff5722;
+    color: white;
+    width: 40vw;
+    position: relative;
+    left: 52%;
+    bottom: 80%;
+    margin-top: -66%;
+    height: 56vh;
+    padding: 2%;
+    visibility: hidden;
+    z-index: 2;
+
+}
+
+.box2 {
+    background-color: #ff5722;
+    color: white;
+    width: 40vw;
+    left: 52%;
+    bottom: 80%;
+    height: 56vh;
+    padding: 2%;
+    position: relative;
+    z-index: 2;
+    visibility: hidden;
+}
+
+li {
+    line-height: 2rem;
+    font-size: 1.1rem;
+}
+
+#interpret1 {
+    position: relative;
+    left: 52%;
+    transform: translateY(-20rem);
+    z-index: 1;
+}
+
+.ok {
+    width: 12%;
+    height: 4vh;
+    position: relative;
+    left: 90%;
+    top: 3%;
+    background-color: green;
+    border: 1px solid green;
+    color: white;
+    border-radius: 20px;
+
+}
+
+.ok:hover {
+    background-color: yellow;
+    border: 1px solid yellow;
+    color: orange;
+}
+
+#interpret1 {
+    background-color: #ff5722;
+    width: 7vw;
+    height: 6vh;
+    border: 1px solid #ff5722;
+    color: white;
+    border-radius: 20px;
+}
+
+#interpret1:hover {
+    background-color: yellow;
+    color: orange;
+    border: 1px solid yellow;
+}
+
+#interpret2 {
+    background-color: #ff5722;
+    width: 7vw;
+    height: 6vh;
+    border: 1px solid #ff5722;
+    color: white;
+    border-radius: 20px;
+    position: relative;
+    left: 52%;
+    z-index: 1;
+    bottom: 14rem;
+}
+
+#ok1 {
+
+    width: 12%;
+    height: 4vh;
+    position: relative;
+    left: 90%;
+    top: 3%;
+    background-color: green;
+    border: 1px solid green;
+    color: white;
+    border-radius: 20px;
+
+
+}
+
+#ok1:hover {
+    background-color: yellow;
+    border: 1px solid yellow;
+    color: orange;
+
+}
+
+#interpret2:hover {
+    background-color: yellow;
+    color: orange;
+    border: 1px solid yellow;
 }
