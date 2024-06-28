@@ -44,7 +44,7 @@ async function fetchAndDisplayPosts() {
         <p>${postData.details}</p>
         <button class = "like-btn">Like</button>
         <button class="comment-toggle">Comments</button>
-        <button class = "donate-btn">Donate</button>
+        <a href = "../donateFolder/donate.html"><button class = "donate-btn">Donate</button></a>
         <div class="comment-section">
           
         </div> <!-- Container for comments -->
