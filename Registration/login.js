@@ -19,61 +19,58 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
-document.addEventListener("DOMContentLoaded", function () {
-  const authButton = document.getElementById("authButton");
-  function updateAuthButton() {
-    const loggedIn = localStorage.getItem("loggedIn");
+const loggedIn = localStorage.getItem("loggedIn");
+const loginButton = document.getElementById("login");
+const logoutButton = document.getElementById("logout");
+
+if (loginButton) {
+  loginButton.addEventListener("click", function (event) {
     if (loggedIn === "true") {
-      authButton.textContent = "LogOut";
-      authButton.href = "#";
-      authButton.removeEventListener("click", handleLogin);
-      authButton.addEventListener("click", handleLogout);
+      alert("Already Logged In");
     } else {
-      authButton.textContent = "LogIn";
-      authButton.href = "#";
-      authButton.removeEventListener("click", handleLogout);
-      authButton.addEventListener("click", handleLogin);
+      event.preventDefault();
+      const username = document.getElementById("username")?.value;
+      const password = document.getElementById("password")?.value;
+
+      if (username && password) {
+        const email = `${username}@example.com`;
+
+        signInWithEmailAndPassword(auth, email, password)
+          .then((userCredential) => {
+            // Signed in
+            const user = userCredential.user;
+            localStorage.setItem("loggedIn", "true");
+            localStorage.setItem("UserName", username);
+            window.location.href = "../home/index.html";
+          })
+          .catch((error) => {
+            alert("Error: " + error.message);
+            console.error("Login Error:", error);
+          });
+      } else {
+        alert("Please enter both username and password");
+      }
     }
-  }
+  });
+}
 
-  function handleLogin(event) {
-    event.preventDefault();
-    const username = document.getElementById("username")?.value;
-    const password = document.getElementById("password")?.value;
+if (logoutButton) {
+  logoutButton.addEventListener("click", function (event) {
+    if (loggedIn === "true") {
+      signOut(auth)
+        .then(() => {
+          alert("You'll be logged out");
+          localStorage.removeItem("loggedIn");
+          localStorage.removeItem("UserName");
 
-    if (username && password) {
-      const email = `${username}@example.com`;
-
-      signInWithEmailAndPassword(auth, email, password)
-        .then((userCredential) => {
-          // Signed in
-          const user = userCredential.user;
-          localStorage.setItem("loggedIn", "true");
-          location.reload();
-          localStorage.setItem("UserName", username);
-          // ...
+          window.location.href = "../home/index.html";
         })
         .catch((error) => {
           alert("Error: " + error.message);
-          console.error("Login Error:", error);
+          console.error("Logout Error:", error);
         });
     } else {
-      window.location.href = "#";
+      alert("Already Logged Out");
     }
-  }
-  function handleLogout (event){
-
-    signOut(auth)
-      .then(() => {
-        localStorage.removeItem("loggedIn");
-        alert("You'll be logged out");
-        location.reload();
-        localStorage.removeItem("UserName")
-      })
-      .catch((error) => {
-        alert("Error: " + error.message);
-        console.error("Logout Error:", error);
-      });
-  }
-  updateAuthButton();
-});
+  });
+}

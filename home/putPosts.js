@@ -66,7 +66,7 @@ onAuthStateChanged(auth, (user) => {
 
   } else {
     // User is not signed in
-    alert("User is not signed in.");
+    console.log("User is not signed in.");
   }
 });
 
