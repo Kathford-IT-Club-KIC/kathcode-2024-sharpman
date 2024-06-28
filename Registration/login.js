@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
           // Signed in
           const user = userCredential.user;
           localStorage.setItem("loggedIn", "true");
-          window.location.href = "#";
+          location.reload();
           localStorage.setItem("UserName", username);
           // ...
         })
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .then(() => {
         localStorage.removeItem("loggedIn");
         alert("You'll be logged out");
-        window.location.href = "#";
+        location.reload();
         localStorage.removeItem("UserName")
       })
       .catch((error) => {
