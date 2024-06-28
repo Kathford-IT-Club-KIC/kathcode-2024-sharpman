@@ -47,7 +47,7 @@ registration.addEventListener("click", function (event) {
         const docRef = await addDoc(collection(db,"users"),{
         userId:user.uid,
         firstName:firstname,
-        lastname:lastname,
+        lastName:lastname,
         userName:username
 
         });
