@@ -47,3 +47,28 @@ nav a:hover {
     text-align: center;
     margin: 20px auto;
 }
+.container h1 {
+    font-size: 28px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+.container form {
+    margin-bottom: 20px;
+}
+.container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555555;
+    text-align: left;
+}
+.container input[type="text"],
+.container input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
