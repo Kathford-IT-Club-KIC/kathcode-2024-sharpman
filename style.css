@@ -139,3 +139,25 @@ main {
         margin: 0;
     }
 }
+.slider {
+    width: 80%;
+    margin: 50px auto;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.slides {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease;
+}
+.slide {
+    width: 33.333%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    padding: 20px;
+}
