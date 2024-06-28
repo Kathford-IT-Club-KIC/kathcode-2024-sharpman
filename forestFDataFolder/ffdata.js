@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     fetch('forest-fire-data.csv')
         .then(response => {
             if (!response.ok) {
