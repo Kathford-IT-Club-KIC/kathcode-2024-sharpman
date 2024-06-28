@@ -38,17 +38,17 @@ registration.addEventListener("click", function (event) {
   const auth = getAuth();
   createUserWithEmailAndPassword(auth, email, password)
     .then(async (userCredential) => {
-      
+
       const user = userCredential.user;
 
 
       try {
 
-        const docRef = await addDoc(collection(db,"users"),{
-        userId:user.uid,
-        firstName:firstname,
-        lastName:lastname,
-        userName:username
+        const docRef = await addDoc(collection(db, "users"), {
+          userId: user.uid,
+          firstName: firstname,
+          lastName: lastname,
+          userName: username
 
         });
         console.log("Document written")
@@ -57,8 +57,8 @@ registration.addEventListener("click", function (event) {
       }
     })
     .catch((error) => {
-        alert("Error: " + error.message);
-        console.error("Registration Error:", error);
+      alert("Error: " + error.message);
+      console.error("Registration Error:", error);
       // ..
     });
 });
