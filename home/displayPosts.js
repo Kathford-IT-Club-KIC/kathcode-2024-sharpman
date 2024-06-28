@@ -41,7 +41,7 @@ async function fetchAndDisplayPosts() {
         <p>${postData.details}</p>
         <button class="like-btn">Like</button>
         <button class="comment-toggle">Comments</button>
-        <button class="donate-btn">Donate</button>
+        <a href = "../donateFolder/donate.html"><button class="donate-btn">Donate</button></a>
         <div class="comment-section" style="display: none;">
           <div class="comments-list"></div>
           ${displayName ? '<input type="text" class="comment-input" placeholder="Write a comment..."><button class="comment-submit">Post</button>' : '<p>Please sign in to comment.</p>'}
