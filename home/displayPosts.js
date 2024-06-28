@@ -78,7 +78,7 @@ async function fetchAndDisplayPosts() {
 
 async function displayComments(postId, postElement) {
   const commentsList = postElement.querySelector(".comments-list");
-  commentsList.innerHTML = ""; // Clear previous comments
+  commentsList.innerHTML = ""; 
 
   try {
     const commentsQuery = query(collection(db, "posts", postId, "comments"));

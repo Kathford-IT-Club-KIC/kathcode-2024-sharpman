@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="styles.css">
   <script type="module" src="putPosts.js"></script>
   <script type="module" src="displayPosts.js"></script>
+  <script type="module" src="/Registration/login.js"></script>
 </head>
 
 <body>
@@ -18,7 +19,8 @@
       <a href="index.html">Home</a>
       <a href="../forestFDataFolder/forestFireData.html">Forest Fire Data</a>
       <a href="../mostimpacted/index.html">Most Impacted District</a>
-      <a href="../Registration/login.html" id="logout">Login</a>
+      <a href="../Registration/login.html">Login</a>
+      <a href="#" id="logout">Logout</a>
       <a href="../Registration/registration.html">Register</a>
     </nav>
   </header>
@@ -92,17 +94,17 @@
           slides.style.transform = `translateX(-${index * 33.333}%)`;
         }, 3000);
       }
-      document.addEventListener('DOMContentLoaded', function () {
-        const logout = document.getElementById("logout")
-        const loggedIn = localStorage.getItem("loggedIn");
-        if (loggedIn === "true") {
-          logout.textContent = "Log Out";
-          logout.href = "../Registration/login.html";
+      // document.addEventListener('DOMContentLoaded', function () {
+      //   const logout = document.getElementById("logout")
+      //   const loggedIn = localStorage.getItem("loggedIn");
+      //   if (loggedIn === "true") {
+      //     logout.textContent = "Log Out";
+      //     logout.href = "../Registration/login.html";
 
-        } else {
-          logout.textContent = "Log In";
-          logout.href = "../Registration/login.html";
+      //   } else {
+      //     logout.textContent = "Log In";
+      //     logout.href = "../Registration/login.html";
 
-        }
-      });
+      //   }
+      // });
     </script>
