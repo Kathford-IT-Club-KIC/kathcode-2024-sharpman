@@ -98,3 +98,10 @@ nav a:hover {
 .container a:hover {
     text-decoration: underline;
 }
+.PersonClass{
+    background-color: transparent;
+}
+.PersonClass:hover{
+    background-color: transparent;
+    cursor: auto;
+}

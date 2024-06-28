@@ -89,17 +89,18 @@ li {
     position: relative;
     left: 90%;
     top: 3%;
-    background-color: green;
-    border: 1px solid green;
+    background-color: #ff5722;
     color: white;
+    border: 1px solid #ff5722;
     border-radius: 20px;
 
 }
 
 .ok:hover {
-    background-color: yellow;
-    border: 1px solid yellow;
-    color: orange;
+    background-color: #d84315;
+    border: none;
+    cursor: pointer;
+    color: #fff;
 }
 
 #interpret1 {
@@ -112,9 +113,9 @@ li {
 }
 
 #interpret1:hover {
-    background-color: yellow;
-    color: orange;
-    border: 1px solid yellow;
+    background-color: #d84315;
+    color: #fff;
+    cursor: pointer;
 }
 
 #interpret2 {
@@ -137,23 +138,22 @@ li {
     position: relative;
     left: 90%;
     top: 3%;
-    background-color: green;
-    border: 1px solid green;
+    background-color: #ff5722;
+    border: 1px solid #ff5722;
     color: white;
     border-radius: 20px;
 }
 
 #ok1:hover {
-    background-color: yellow;
-    border: 1px solid yellow;
-    color: orange;
-
+    background-color: #d84315;
+    color: #fff;
+    cursor: pointer;
 }
 
 #interpret2:hover {
-    background-color: yellow;
-    color: orange;
-    border: 1px solid yellow;
+    background-color: #d84315;
+    color: #fff;
+    cursor: pointer;
 }
 .PersonClass{
     background-color: transparent;
