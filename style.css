@@ -4,15 +4,15 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    height: 98vh;
-    width: 96vw;
+    height: 100%;
+    width: 100%;
 }
 
 header {
-    width: 100vw;
+    width: 100%;
     background-color: #ff5722;
     color: white;
-    padding: 10px;
+    /* padding: 10px; */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -74,28 +74,6 @@ main {
     background-color: #f2f2f2;
 }
 
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    background-color: rgba(0,0,0,0.5);
-    user-select: none;
-    border-radius: 0 3px 3px 0;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-
 .posts {
     width: 80%;
     max-width: 800px;
@@ -113,7 +91,7 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.like-btn, .comment-btn, .donate-btn {
+.like-btn, .comment-toggle, .donate-btn {
     margin: 5px;
     padding: 8px 12px;
     border: none;
@@ -122,7 +100,7 @@ main {
     transition: background-color 0.3s;
 }
 
-.like-btn:hover, .comment-btn:hover, .donate-btn:hover {
+.like-btn:hover, .comment-toggle:hover, .donate-btn:hover {
     background-color: #e64a19;
     color: white;
 }

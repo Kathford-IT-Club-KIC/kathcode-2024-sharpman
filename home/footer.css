@@ -1,0 +1,63 @@
+/* footer.css */
+
+.footHo{
+    width: 100%;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: scroll;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer nav {
+    display: flex;
+    justify-content: center;
+  }
+  footer nav #twitter:hover {
+    background-color: white;
+    color: #20a9ffde;
+  }
+  footer nav #fb:hover {
+    background-color: white;
+    color: #197dffc8;
+  }
+  footer nav #insta:hover {
+    background-color: white;
+    color: #e13898;
+  }
+  
+  footer nav #youtube:hover {
+    background-color: white;
+    color: #ff0000b1;
+  }
+  .social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    transform: translateY(-3px);
+  }
+  
+  .fa-twitter:hover {
+    color: #1DA1F2;
+  }
+  
+  .fa-facebook-f:hover {
+    color: #1877f2;
+  }
+  
+  .fa-instagram:hover {
+    color: #C13584;
+  }
+  
+  .fa-youtube:hover {
+    color: #FF0000;
+  }
+  

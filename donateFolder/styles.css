@@ -45,13 +45,14 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
+    margin: 2px;
     padding: 20px;
     box-sizing: border-box;
+    width: 20%;
 }
 
 .image1 {
-    padding: 10px;
+    padding: 1px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -64,7 +65,7 @@ nav a:hover {
 }
 
 .downloadQR {
-    margin: 20px 0;
+    margin: 2px;
 }
 
 .downloadQR button {
@@ -79,4 +80,8 @@ nav a:hover {
 
 .downloadQR button:hover {
     background-color: #e64a19;
+}
+
+p{
+    margin: 8px;
 }

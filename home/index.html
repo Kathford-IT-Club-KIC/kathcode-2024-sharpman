@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="footer.css">
   <link rel="stylesheet" href="styles.css">
   <script type="module" src="putPosts.js"></script>
   <script type="module" src="displayPosts.js"></script>
@@ -13,7 +15,7 @@
 
 <body>
   <header>
-    <h1>Fire Aid Nepal</h1>
+    <h1 id="fireH1">Fire Aid Nepal</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="../forestFDataFolder/forestFireData.html">Forest Fire Data</a>
@@ -45,16 +47,18 @@
     <div id="postsContainer"></div>
     
 
-    <section class="posts">
-      <div class="post">
-        <h3>Fire at XYZ</h3>
-        <p>Details about the fire...</p>
-        <button class="like-btn">Like</button>
-        <button class="comment-btn">Comment (<span class="comment-count">0</span>)</button>
-        <button class="donate-btn">Donate</button>
-      </div>
-    </section>
-
+    <section class="footHo">
+      <footer>
+        <nav>
+          <div class="social-icons">
+            <a href="https://twitter.com" target="_blank" id="twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://facebook.com" target="_blank" id="fb"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" id="insta"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" id="youtube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </nav>
+      </footer>
+  </section>
     <script type="text/javascript">
       document.addEventListener('DOMContentLoaded', () => {
         const sliderContainer = document.getElementById('slidesContainer');
@@ -106,3 +110,6 @@
         }
       });
     </script>
+</main>
+</body>
+</html>
