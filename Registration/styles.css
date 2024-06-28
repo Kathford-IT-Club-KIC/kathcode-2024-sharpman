@@ -72,3 +72,29 @@ nav a:hover {
     font-size: 16px;
     box-sizing: border-box;
 }
+.container button {
+    background-color: #ff5722;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+.container button:hover {
+    background-color: #e64a19;
+}
+
+.container a {
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
