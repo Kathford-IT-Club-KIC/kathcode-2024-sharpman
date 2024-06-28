@@ -11,6 +11,7 @@
 		<h1>Fire Aid Nepal</h1>
 		<nav>
 			<a href="../home/index.html">Return to Home</a>
+			<a id="person-link" href="#" class="PersonClass">Person</a>
 		</nav>
 	</header>
 	<div class="container">
@@ -25,6 +26,23 @@
 			<button href="#" class="login-btn"  id="login" >Login</button>
 			<a href="registration.html">Click here to create account</a>
 		</div>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				const loggedIn = localStorage.getItem("loggedIn");
+				if(loggedIn==="true"){
+					const username = localStorage.getItem('UserName');
+					if (username) {
+						const personLink = document.getElementById('person-link');
+						personLink.textContent = username;
+					}
+				}
+				else{
+					const personLink = document.getElementById('person-link');
+					personLink.textContent = Person;
+				}
+				
+			});
+		  </script>
 	
 
 </body>

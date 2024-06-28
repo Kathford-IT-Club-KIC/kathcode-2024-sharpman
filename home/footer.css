@@ -1,4 +1,3 @@
-/* footer.css */
 
 .footHo{
     width: 100%;
@@ -13,7 +12,18 @@ footer {
     width: 100%;
     
   }
-  
+  .aboutUsDiv{
+    margin-top: 30px;
+  }
+  #aboutUs{
+    color: #fff;
+    margin: 10px 15px;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: none;
+  }
+
   footer nav {
     display: flex;
     justify-content: center;

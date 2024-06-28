@@ -16,8 +16,7 @@
       <a href="../home/index.html">Home</a>
       <a href="forestFireData.html">Forest Fire Data</a>
       <a href="../mostimpacted/index.html">Most Impacted Districts</a>
-      <a href="../Registration/login.html">Login</a>
-      <a href="../Registration/registration.html">Register</a>
+      <a id="person-link" href="#" class="PersonClass">Person</a>
     </nav>
   </header>
   <h1>A Year Worth of Forest Fire Data of Nepal</h1>
@@ -26,6 +25,23 @@
     <tbody id="tableBody"></tbody>
   </table>
   <script src="ffdata.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const loggedIn = localStorage.getItem("loggedIn");
+        if(loggedIn==="true"){
+            const username = localStorage.getItem('UserName');
+            if (username) {
+                const personLink = document.getElementById('person-link');
+                personLink.textContent = username;
+            }
+        }
+        else{
+            const personLink = document.getElementById('person-link');
+            personLink.textContent = Person;
+        }
+        
+    });
+  </script>
 </body>
 
 </html>

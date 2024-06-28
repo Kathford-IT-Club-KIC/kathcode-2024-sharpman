@@ -23,7 +23,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth();
 const db = getFirestore();
-
+const loggedIn = localStorage.getItem("loggedIn");
 
 onAuthStateChanged(auth, (user) => {
   if (user) {
@@ -64,9 +64,14 @@ onAuthStateChanged(auth, (user) => {
   }
 });
 
-  } else {
-    // User is not signed in
-    console.log("User is not signed in.");
+  } 
+  else{
+    if(loggedIn===null)
+      {
+        // User is not signed in
+        alert("You are not signed in");
+      }
   }
+  
 });
 

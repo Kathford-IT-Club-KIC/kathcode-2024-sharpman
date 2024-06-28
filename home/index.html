@@ -21,9 +21,10 @@
       <a href="index.html">Home</a>
       <a href="../forestFDataFolder/forestFireData.html">Forest Fire Data</a>
       <a href="../mostimpacted/index.html">Most Impacted District</a>
-      <a href="../Registration/login.html">Login</a>
+      <a href="../Registration/login.html" class="loginThau">Login</a>
       <a href="#" id="logout">Logout</a>
-      <a href="../Registration/registration.html">Register</a>
+      <a href="../Registration/registration.html" class="registerThau">Register</a>
+      <a id="person-link" href="#" class="PersonClass">Person</a>
     </nav>
   </header>
   <main>
@@ -109,8 +110,40 @@
           <a href="https://youtube.com" target="_blank" id="youtube"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </nav>
+      <div class="aboutUsDiv">
+        <a href="" id="aboutUs">About Us</a>
+      </div>
     </footer>
 </section>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const loggedIn = localStorage.getItem("loggedIn");
+    if(loggedIn==="true"){
+      const loginThau = document.querySelector('.loginThau');
+      const registerThau = document.querySelector('.registerThau');
+      loginThau.addEventListener('click',()=>{
+        alert("Can't Login. You are already logged in!");
+        loginThau.setAttribute('href','index.html');
+      })
+      registerThau.addEventListener('click',()=>{
+        alert("Can't Register. You are already registered!");
+        registerThau.setAttribute('href','index.html');
+      })
+    
+
+      const username = localStorage.getItem('UserName');
+      if (username) {
+        const personLink = document.getElementById('person-link');
+        personLink.textContent = username;
+      }
+    }
+    else{
+      const personLink = document.getElementById('person-link');
+      personLink.textContent = Person;
+    }
+    
+  });
+</script>
 
 </body>
 </html>

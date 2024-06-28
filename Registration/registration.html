@@ -12,6 +12,7 @@
 		<h1>Fire Aid Nepal</h1>
 		<nav>
 			<a href="../home/index.html">Return to Home</a>
+            <a id="person-link" href="#" class="PersonClass">Person</a>
 		</nav>
 	</header>
 	<div class="container">
@@ -32,14 +33,22 @@
 		</div>
 	</div>
 	<script>
-        // document.addEventListener('DOMContentLoaded', function() {
-        //   const username = localStorage.getItem('username');
-        //   if (username) {
-        //     const personLink = document.getElementById('person-link');
-        //     personLink.textContent = username;
-        //   }
-        // });
-    </script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loggedIn = localStorage.getItem("loggedIn");
+            if(loggedIn==="true"){
+                const username = localStorage.getItem('UserName');
+                if (username) {
+                    const personLink = document.getElementById('person-link');
+                    personLink.textContent = username;
+                }
+            }
+            else{
+                const personLink = document.getElementById('person-link');
+                personLink.textContent = Person;
+            }
+            
+        });
+      </script>
 
 </body>
 </html>
