@@ -46,7 +46,7 @@ async function fetchAndDisplayPosts() {
           ${displayName ? '<input type="text" class="comment-input" placeholder="Write a comment..."><button class="comment-submit">Post</button>' : '<p>Please sign in to comment.</p>'}
         </div>
       `;
-      postsContainer.appendChild(postElement);
+      postsContainer.prepend(postElement);
 
       const commentToggle = postElement.querySelector(".comment-toggle");
       const commentSection = postElement.querySelector(".comment-section");
