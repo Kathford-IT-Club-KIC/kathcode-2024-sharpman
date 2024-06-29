@@ -54,8 +54,7 @@ img {
     margin-top: -66%;
     height: 56vh;
     padding: 2%;
-    visibility: hidden;
-    z-index: 2;
+    margin-bottom: 5%;
 
 }
 
@@ -68,8 +67,7 @@ img {
     height: 56vh;
     padding: 2%;
     position: relative;
-    z-index: 2;
-    visibility: hidden;
+    margin-bottom: 5%;
 }
 
 .box3 {
@@ -78,96 +76,15 @@ img {
     width: 40vw;
     left: 52%;
     bottom: 80%;
-    height: 56vh;
+    height: 50vh;
     padding: 2%;
     position: relative;
-    z-index: 2;
-    visibility: hidden;
+    bottom: 30rem;
 }
 
 li {
     line-height: 2rem;
     font-size: 1.1rem;
-}
-
-#interpret1 {
-    position: relative;
-    left: 52%;
-    transform: translateY(-20rem);
-    z-index: 1;
-}
-
-.ok {
-    width: 12%;
-    height: 4vh;
-    position: relative;
-    left: 90%;
-    top: 3%;
-    background-color: #e64a19;
-    color: white;
-    border: 1px solid #e64a19;
-    border-radius: 20px;
-
-}
-
-.ok:hover {
-    background-color: #d84315;
-    border: none;
-    cursor: pointer;
-    color: #fff;
-}
-
-#interpret1 {
-    background-color: #e64a19;
-    width: 7vw;
-    height: 6vh;
-    border: 1px solid #e64a19;
-    color: white;
-    border-radius: 20px;
-}
-
-#interpret1:hover {
-    background-color: #d84315;
-    color: #fff;
-    cursor: pointer;
-}
-
-#interpret2 {
-    background-color: #e64a19;
-    width: 7vw;
-    height: 6vh;
-    border: 1px solid #e64a19;
-    color: white;
-    border-radius: 20px;
-    position: relative;
-    left: 52%;
-    z-index: 1;
-    bottom: 14rem;
-}
-
-#ok1 {
-
-    width: 12%;
-    height: 4vh;
-    position: relative;
-    left: 90%;
-    top: 3%;
-    background-color: #e64a19;
-    border: 1px solid #e64a19;
-    color: white;
-    border-radius: 20px;
-}
-
-#ok1:hover {
-    background-color: #d84315;
-    color: #fff;
-    cursor: pointer;
-}
-
-#interpret2:hover {
-    background-color: #d84315;
-    color: #fff;
-    cursor: pointer;
 }
 
 .PersonClass {
@@ -179,3 +96,20 @@ li {
     cursor: auto;
 }
 
+.box1,.box2,.box3{
+    border-radius: 20px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+    box-shadow: 7px 7px 7px 7px #ec8735f0;
+    resize: none;
+    color: black;
+    
+}
+.box1:hover,.box2:hover,.box3:hover{
+    box-shadow: 7px 7px 7px 7px #ec8735f0;
+    transform: translateY(-5px);
+}
+
+#image4{
+    
+}
