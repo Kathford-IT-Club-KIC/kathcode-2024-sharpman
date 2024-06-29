@@ -55,6 +55,8 @@ registration.addEventListener("click", function (event) {
       } catch (error) {
         console.error("Error adding document: ", e);
       }
+      alert("User Registered");
+      window.location.href = "login.html";
     })
     .catch((error) => {
       alert("Error: " + error.message);
