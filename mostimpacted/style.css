@@ -103,9 +103,9 @@ li {
     position: relative;
     left: 90%;
     top: 3%;
-    background-color: #ff5722;
+    background-color: #e64a19;
     color: white;
-    border: 1px solid #ff5722;
+    border: 1px solid #e64a19;
     border-radius: 20px;
 
 }
@@ -118,10 +118,10 @@ li {
 }
 
 #interpret1 {
-    background-color: #ff5722;
+    background-color: #e64a19;
     width: 7vw;
     height: 6vh;
-    border: 1px solid #ff5722;
+    border: 1px solid #e64a19;
     color: white;
     border-radius: 20px;
 }
@@ -133,10 +133,10 @@ li {
 }
 
 #interpret2 {
-    background-color: #ff5722;
+    background-color: #e64a19;
     width: 7vw;
     height: 6vh;
-    border: 1px solid #ff5722;
+    border: 1px solid #e64a19;
     color: white;
     border-radius: 20px;
     position: relative;
@@ -152,8 +152,8 @@ li {
     position: relative;
     left: 90%;
     top: 3%;
-    background-color: #ff5722;
-    border: 1px solid #ff5722;
+    background-color: #e64a19;
+    border: 1px solid #e64a19;
     color: white;
     border-radius: 20px;
 }
