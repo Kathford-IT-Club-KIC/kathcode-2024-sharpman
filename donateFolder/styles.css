@@ -74,3 +74,10 @@ img{
 p{
     margin: 8px;
 }
+.PersonClass{
+    background-color: transparent;
+}
+.PersonClass:hover{
+    background-color: transparent;
+    cursor: auto;
+}

@@ -30,7 +30,7 @@ footer {
   }
   footer nav #twitter:hover {
     background-color: white;
-    color: #20a9ffde;
+    color: #6e6d6dde;
   }
   footer nav #fb:hover {
     background-color: white;
@@ -56,8 +56,8 @@ footer {
     transform: translateY(-3px);
   }
   
-  .fa-twitter:hover {
-    color: #1DA1F2;
+  .fa-x-twitter:hover {
+    color: #000000cc;
   }
   
   .fa-facebook-f:hover {

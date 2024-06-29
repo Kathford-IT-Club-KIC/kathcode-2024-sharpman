@@ -41,6 +41,7 @@ nav a:hover {
 img {
     margin-top: 5%;
     width: 50vw;
+    
 }
 
 .box1 {
@@ -71,6 +72,19 @@ img {
     visibility: hidden;
 }
 
+.box3 {
+    background-color: #ff5722;
+    color: white;
+    width: 40vw;
+    left: 52%;
+    bottom: 80%;
+    height: 56vh;
+    padding: 2%;
+    position: relative;
+    z-index: 2;
+    visibility: hidden;
+}
+
 li {
     line-height: 2rem;
     font-size: 1.1rem;
@@ -89,17 +103,18 @@ li {
     position: relative;
     left: 90%;
     top: 3%;
-    background-color: #d84315;
-    border: 1px solid #d84315;
+    background-color: #ff5722;
     color: white;
+    border: 1px solid #ff5722;
     border-radius: 20px;
 
 }
 
 .ok:hover {
-    background-color: #a53311;
-    border: 1px solid #a53311;
-    color: white;
+    background-color: #d84315;
+    border: none;
+    cursor: pointer;
+    color: #fff;
 }
 
 #interpret1 {
@@ -112,9 +127,9 @@ li {
 }
 
 #interpret1:hover {
-    background-color: #a53311;
-    color: white;
-    border: 1px solid #a53311;
+    background-color: #d84315;
+    color: #fff;
+    cursor: pointer;
 }
 
 #interpret2 {
@@ -137,23 +152,22 @@ li {
     position: relative;
     left: 90%;
     top: 3%;
-    background-color: #d84315;
-    border: 1px solid #d84315;
+    background-color: #ff5722;
+    border: 1px solid #ff5722;
     color: white;
     border-radius: 20px;
 }
 
 #ok1:hover {
-    background-color: #a53311;
-    border: 1px solid #a53311;
-    color: white;
-
+    background-color: #d84315;
+    color: #fff;
+    cursor: pointer;
 }
 
 #interpret2:hover {
-    background-color: #a53311;
-    color: white;
-    border: 1px solid #a53311;
+    background-color: #d84315;
+    color: #fff;
+    cursor: pointer;
 }
 
 .PersonClass {
@@ -164,3 +178,4 @@ li {
     background-color: transparent;
     cursor: auto;
 }
+
