@@ -69,7 +69,7 @@ onAuthStateChanged(auth, (user) => {
     if(loggedIn===null)
       {
         // User is not signed in
-        alert("You are not signed in");
+        console.log("You are not signed in");
       }
   }
   
