@@ -39,7 +39,6 @@ async function fetchAndDisplayPosts() {
       postElement.innerHTML = `
         <h3>${postData.title}</h3>
         <p>${postData.details}</p>
-        <button class="like-btn">Like</button>
         <button class="comment-toggle">Comments</button>
         <a href = "../donateFolder/donate.html"><button class="donate-btn">Donate</button></a>
         <div class="comment-section" style="display: none;">
