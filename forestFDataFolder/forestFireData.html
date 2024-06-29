@@ -7,6 +7,29 @@
   <title>Forest Fire Data- Fire Aid Nepal</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="/style.css">
+  <style>
+    button {
+      width: 10%;
+      height:5vh;
+      position: relative;
+      left: 80%;
+      top:30%;
+      margin-top: 3%;
+      background-color: #ff5722;
+      border: none;
+      color: white;
+      border-radius: 20px;
+    }
+    button:hover{
+      background-color: #e64a19;
+    }
+    .data{
+      display: flex;
+    }
+    #csvTable{
+      margin-top:10px;
+    }
+  </style>
 </head>
 
 <body>
@@ -19,28 +42,41 @@
       <a id="person-link" href="#" class="PersonClass">Guest mode</a>
     </nav>
   </header>
+  <div class="data">
+  <button onclick="downloadCSV()">Download CSV</button>
   <h1>A Year Worth of Forest Fire Data of Nepal</h1>
+  </div>
   <table id="csvTable">
     <thead id="tableHead"></thead>
     <tbody id="tableBody"></tbody>
   </table>
   <script src="ffdata.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const loggedIn = localStorage.getItem("loggedIn");
-        if(loggedIn==="true"){
-            const username = localStorage.getItem('UserName');
-            if (username) {
-                const personLink = document.getElementById('person-link');
-                personLink.textContent = username;
-            }
+    document.addEventListener('DOMContentLoaded', function () {
+      const loggedIn = localStorage.getItem("loggedIn");
+      if (loggedIn === "true") {
+        const username = localStorage.getItem('UserName');
+        if (username) {
+          const personLink = document.getElementById('person-link');
+          personLink.textContent = username;
         }
-        else{
-            const personLink = document.getElementById('person-link');
-            personLink.textContent = Person;
-        }
-        
+      }
+      else {
+        const personLink = document.getElementById('person-link');
+        personLink.textContent = 'Guest mode';
+      }
+
     });
+    function downloadCSV() {
+      var csvFile = '';
+      var downloadLink = document.createElement('a');
+      downloadLink.href = csvFile;
+      downloadLink.download = 'data.csv'; // The name of the downloaded file
+      document.body.appendChild(downloadLink);
+      downloadLink.click();
+      document.body.removeChild(downloadLink);
+    }
+
   </script>
 </body>
 
